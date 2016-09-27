@@ -1,5 +1,7 @@
 $('.accept').click(function() {
   // fade in
+  window.scrollTo(0, 0);
+  $('body').addClass('checkmark-visible');
   $('.checkmark-background').removeClass('hide');
 
   window.setTimeout(function() {
@@ -9,6 +11,7 @@ $('.accept').click(function() {
 
   // fade out
   window.setTimeout(function() {
+    $('body').removeClass('checkmark-visible');
     $('.checkmark-background').addClass('transparent');
 
     window.setTimeout(function() {

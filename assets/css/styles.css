@@ -2,6 +2,10 @@ body {
   padding-top: 75px;
 }
 
+body.checkmark-visible {
+  overflow: hidden;
+}
+
 .buttons.container .btn {
   margin-bottom: 1em;
   padding: 2em 0;
