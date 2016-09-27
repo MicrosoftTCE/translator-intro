@@ -1,0 +1,80 @@
+/* animations */
+
+@-webkit-keyframes checkmark {
+  0% {
+    stroke-dashoffset: 50px
+  }
+
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@-ms-keyframes checkmark {
+  0% {
+    stroke-dashoffset: 50px
+  }
+
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    stroke-dashoffset: 50px
+  }
+
+  100% {
+    stroke-dashoffset: 0
+  }
+}
+
+@-webkit-keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 240px
+  }
+
+  100% {
+    stroke-dashoffset: 480px
+  }
+}
+
+@-ms-keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 240px
+  }
+
+  100% {
+    stroke-dashoffset: 480px
+  }
+}
+
+@keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 240px
+  }
+
+  100% {
+    stroke-dashoffset: 480px
+  }
+}
+
+.checkmark {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.checkmark path {
+  stroke-dasharray: 50px, 50px;
+  stroke-dashoffset: 0px;
+  -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  animation: checkmark 0.25s ease-in-out 0.7s backwards
+}
+
+.checkmark circle {
+  stroke-dasharray: 240px, 240px;
+  stroke-dashoffset: 480px;
+  -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+  animation: checkmark-circle 0.6s ease-in-out backwards
+}

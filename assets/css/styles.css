@@ -1,0 +1,38 @@
+body {
+  padding-top: 70px;
+}
+
+.buttons.container .btn {
+  margin-bottom: 1em;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.navbar-brand img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.checkmark-background {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  padding-bottom: 60px;
+  transition: opacity .4s;
+  z-index: 5000;
+}
+
+.checkmark-background > .container {
+  height: 100%;
+  padding: 2em 2em 2.5em;
+}
+
+.checkmark-background.transparent {
+  zoom: 1;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
