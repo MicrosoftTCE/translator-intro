@@ -1,0 +1,14 @@
+﻿/* Font faces */
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('../fonts/segoeui.eot');
+    src: local("Segoe UI"),
+         local("Segoe"),
+         local("Segoe WP"),
+         url('../fonts/segoeui.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/segoeui.woff') format('woff'),
+         url('../fonts/segoeui.svg#SegoeUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
