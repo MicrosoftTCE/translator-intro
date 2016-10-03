@@ -1,0 +1,35 @@
+{% assign language = include.language %}
+
+<div class="modal fade" id="language_modal_{{language.code}}"
+     tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+                aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title">{{ language.agreement_title }}</h4>
+      </div>
+      <div class="modal-body">
+        <div class="agreement">
+          <div class="well">{{ language.agreement_text }}</div>
+          <p>{{ language.privacy_instructions }}</p>
+          <p>
+            <a href="{{ language.privacy_url }}">{{ language.privacy_url }}</a>
+          </p>
+          <p>{{ language.agreement_instructions }}</p>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal">{{ language.agreement_decline }}</button>
+        <button type="button"
+                class="btn btn-primary accept"
+                data-dismiss="modal">{{ language.agreement_accept }}</button>
+      </div>
+    </div>
+  </div>
+</div>
