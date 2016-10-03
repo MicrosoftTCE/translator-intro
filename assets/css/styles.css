@@ -1,9 +1,20 @@
 body {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 body.checkmark-visible {
   overflow: hidden;
+}
+
+.banner {
+  background-color: #107c10;
+  color: white;
+  margin-bottom: 2em;
+}
+
+.banner h1 {
+  margin: 1em 0;
+  padding: 0;
 }
 
 .buttons.container .btn {
