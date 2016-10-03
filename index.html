@@ -1,145 +1,101 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: default
+---
 
-    <meta name="description" content="TODO">
-    <meta name="author" content="TODO">
-    <link rel="icon" href="../../favicon.ico#TODO">
+<div class="buttons container">
+  <div class="row">
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="en">I speak English</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="es">Yo hablo español</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="zh">我说中文</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="it">Io parlo italiano</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="ru">Я говoрю по-русски</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="fr">Je parle français</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="pa">ਇ ਸ੍ਪੇਆਕ ਪੰਜਾਬੀ</button>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <button type="button" class="btn btn-primary btn-lg"
+              data-toggle="modal" data-target="#modal"
+              data-lang="vi">Tôi nói tiếng Việt</button>
+    </div>
+  </div>
+</div>
 
-    <title>TODO</title>
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Agreement</h4>
+      </div>
+      <div class="modal-body">
+        <div class="agreement">
+          <div class="well">
+            Translation is enabled by Microsoft Translator (“Translator”). Text or speech submitted for translation may be for service improvement but will not be used to identify specific individuals or for advertising. Service improvement data is limited to a sample of not more than 10% of randomly selected, non-consecutive sentences of the text or audio you submit, and we mask or delete numeric strings of characters and email addresses that may be present in the samples of text. The portions of text that we do not use to improve Translator are deleted within 48 hours after they are no longer required to provide your translation.
+          </div>
 
-    <link href="assets/css/fonts.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="vendor/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-    <link href="assets/css/checkmark.css" rel="stylesheet">
-    <link href="assets/css/styles.css" rel="stylesheet">
-    <!--[if lt IE 9]>
-      <script src="vendor/js/html5shiv.min.js"></script>
-      <script src="vendor/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
+          <p>
+            If you would like more information on Microsoft Translator’s Privacy Statement, please click the link below:
+          </p>
 
-  <body>
+          <p>
+            <a href="https://privacy.microsoft.com/en-us/privacystatement/">
+              https://privacy.microsoft.com/en-us/privacystatement/
+            </a>
+          </p>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="./">
-            <img src="assets/img/microsoft-logo.svg" alt="Microsoft Logo">
-          </a>
+          <p>
+            If you would like to proceed with your session using Translator, please click <strong>Accept</strong>.
+          </p>
+
         </div>
+
       </div>
-    </nav>
-
-    <main>
-      <div class="buttons container">
-        <div class="row">
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="en">I speak English</button>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="es">Yo hablo español</button>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="zh">我说中文</button>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="it">Io parlo italiano</button>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="ru">Я говoрю по-русски</button>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="fr">Je parle français</button>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="pa">ਇ ਸ੍ਪੇਆਕ ਪੰਜਾਬੀ</button>
-          </div>
-          <div class="col-sm-6 col-md-4">
-            <button type="button" class="btn btn-primary btn-lg"
-                    data-toggle="modal" data-target="#modal"
-                    data-lang="vi">Tôi nói tiếng Việt</button>
-          </div>
-        </div>
+      <div class="modal-footer">
+        <button type="button"
+                class="btn btn-default"
+                data-dismiss="modal">Cancel</button>
+        <button type="button"
+                class="btn btn-primary accept"
+                data-dismiss="modal">Accept</button>
       </div>
+    </div>
+  </div>
+</div>
 
-      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Agreement</h4>
-            </div>
-            <div class="modal-body">
-              <div class="agreement">
-                <div class="well">
-                  Translation is enabled by Microsoft Translator (“Translator”). Text or speech submitted for translation may be for service improvement but will not be used to identify specific individuals or for advertising. Service improvement data is limited to a sample of not more than 10% of randomly selected, non-consecutive sentences of the text or audio you submit, and we mask or delete numeric strings of characters and email addresses that may be present in the samples of text. The portions of text that we do not use to improve Translator are deleted within 48 hours after they are no longer required to provide your translation.
-                </div>
-
-                <p>
-                  If you would like more information on Microsoft Translator’s Privacy Statement, please click the link below:
-                </p>
-
-                <p>
-                  <a href="https://privacy.microsoft.com/en-us/privacystatement/">
-                    https://privacy.microsoft.com/en-us/privacystatement/
-                  </a>
-                </p>
-
-                <p>
-                  If you would like to proceed with your session using Translator, please click <strong>Accept</strong>.
-                </p>
-
-              </div>
-
-            </div>
-            <div class="modal-footer">
-              <button type="button"
-                      class="btn btn-default"
-                      data-dismiss="modal">Cancel</button>
-              <button type="button"
-                      class="btn btn-primary accept"
-                      data-dismiss="modal">Accept</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="checkmark-background hide transparent">
-        <div class="container">
-        <svg class="checkmark hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
-          <g fill="none" stroke="#8EC343" stroke-width="2">
-            <circle cx="36" cy="36" r="35"></circle>
-            <path d="M17.417,37.778l9.93,9.909l25.444-25.393"></path>
-          </g>
-        </svg>
-      </div>
-      </div>
-
-    </main>
-
-
-    <script src="vendor/js/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-    <script src="vendor/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
-</html>
+<div class="checkmark-background hide transparent">
+  <div class="container">
+    <svg class="checkmark hide" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 72">
+      <g fill="none" stroke="#8EC343" stroke-width="2">
+        <circle cx="36" cy="36" r="35"></circle>
+        <path d="M17.417,37.778l9.93,9.909l25.444-25.393"></path>
+      </g>
+    </svg>
+  </div>
+</div>
