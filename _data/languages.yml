@@ -1,5 +1,6 @@
 - english_name: "English"
   code: "en"
+  dir: "ltr"
   i_speak: "I speak English"
   agreement_title: "Agreement"
   agreement_text: "Translation is enabled by Microsoft Translator (“Translator”). Text or speech submitted for translation may be used for service improvement but will not be used to identify specific individuals or for advertising. Service improvement data is limited to a sample of not more than 10% of randomly selected, non-consecutive sentences of the text or audio you submit, and we mask or delete numeric strings of characters and email addresses that may be present in the samples of text. The portions of text that we do not use to improve Translator are deleted within 48 hours after they are no longer required to provide your translation."
@@ -11,6 +12,7 @@
 
 - english_name: "Spanish"
   code: "es"
+  dir: "ltr"
   i_speak: "Yo hablo español"
   agreement_title: "Acuerdo"
   agreement_text: "Microsoft Translator (“Translator”) habilita la traducción. El texto o discurso que se envía para traducir puede utilizarse para la mejora del servicio, pero no se utilizará para identificar a personas específicas o con fines publicitarios. Los datos para la mejora del servicio se limitan a una muestra no superior a un 10 % de oraciones seleccionadas al azar no consecutivas del texto o audio enviado, y enmascaramos o eliminamos cadenas numéricas de caracteres y direcciones de correo electrónico que pueden aparecer en las muestras de texto. Las porciones de texto que no utilizamos para mejorar Translator se eliminan en un plazo de 48 horas cuando ya no se requiere su traducción."
@@ -21,7 +23,8 @@
   agreement_decline: "Cancelar"
 
 - english_name: "Chinese Simplified"
-  code: "zh-chs"
+  code: "zh-Hans"
+  dir: "ltr"
   i_speak: "我说中文"
   agreement_title: "协议"
   agreement_text: "翻译由 Microsoft Translator（简称“Translator”）启用。提交的翻译文本或语音可能用于服务改进，但不会用于识别特定个人或用作广告。服务改进数据仅限于你提交的文本或音频中随机选取的非连续句子的不超过 10% 的样本，而且我们会屏蔽或删除文本样本中可能出现的数字字符串和电子邮件地址。我们未用于改进 Translator 的部分文本会在它们无需再为你的翻译提供内容后的 48 小时内删除。 "
@@ -32,7 +35,8 @@
   agreement_decline: "取消"
 
 - english_name: "Chinese Traditional"
-  code: "zh-cht"
+  code: "zh-Hant"
+  dir: "ltr"
   i_speak: "我說中文"
   agreement_title: "協定"
   agreement_text: "翻譯是由 Microsoft 翻譯工具 (「翻譯工具」) 啟用。針對翻譯而提交的文字或語音可能做為服務改良之用，而不會用來識別特定個人或做為廣告之用。服務改良資料取樣不會超過您所提交之文字或音訊中隨機選取、不連續句子的 10%，並且我們會遮蓋或刪除可能出現在文字樣本中字元和電子郵件地址的數字字串。未用於改良「翻譯工具」之文字部分，當不再需要用來提供您的翻譯之後，將於 48 小時內刪除。 "
@@ -44,6 +48,7 @@
 
 - english_name: "Italian"
   code: "it"
+  dir: "ltr"
   i_speak: "Io parlo italiano"
   agreement_title: "Accordo"
   agreement_text: "La traduzione è fornita da Microsoft Translator (“Translator“). Testo o input vocale inseriti per la traduzione potrebbero essere utilizzati per il miglioramento del servizio, ma non verranno utilizzati per identificare utenti o a scopo pubblicitario. I dati di miglioramento del servizio sono limitati a un campione e non verrà scelto più del 10% di frasi selezionate in modo casuale e non consecutive tra quelle inviate sotto forma di audio o testo. Verranno inoltre eliminate stringhe numeriche di caratteri e indirizzi di posta elettronica che potrebbero essere presenti. Le porzioni di testo non utilizzate per migliorare Translator vengono eliminate entro 48 ore dalla traduzione."
@@ -55,6 +60,7 @@
 
 - english_name: "French"
   code: "fr"
+  dir: "ltr"
   i_speak: "Je parle français"
   agreement_title: "Accord"
   agreement_text: "Traduction est activée par Microsoft Translator (« traducteur »). Texte ou discours présenté à translation peut être pour l’amélioration du service, mais ne servira pas à identifier des individus spécifiques ou pour la publicité. Données d’amélioration de service sont limitées à un échantillon de pas plus de 10 % des phrases choisies au hasard et non consécutifs du texte ou audio que vous proposez et nous masquer ou supprimer les chaînes de caractères numériques et adresses qui peuvent être présents dans les échantillons de texte d’email. La partie de texte que nous n’utilisons pas d’améliorer traducteur est supprimées dans les 48 heures après que, ils ne sont plus tenus de fournir votre traduction."
@@ -66,6 +72,7 @@
 
 - english_name: "German"
   code: "de"
+  dir: "ltr"
   i_speak: "Ich spreche Deutsch."
   agreement_title: "Vereinbarung"
   agreement_text: "Die Übersetzung wird mit Microsoft Translator (“Translator“) durchgeführt. Text oder Sprache als Eingabe zur Übersetzung kann zur Verbesserung des Diensts genutzt werden, aber diese Daten werden nicht zur Identifizierung bestimmter Personen oder für Werbezwecke verwendet. Die Daten für die Verbesserung des Diensts sind auf einen Anteil von maximal 10 % aus zufällig ausgewählten, nicht aufeinander folgenden Sätzen der von Ihnen bereitgestellten Text- oder Audiodaten beschränkt. Numerische Zeichenfolgen und E-Mail-Adressen, die im Text ggf. enthalten sind, werden von uns verdeckt oder gelöscht. Die Textteile, die nicht zur Verbesserung von Translator herangezogen werden, werden innerhalb von 48 Stunden gelöscht, sobald sie zur Erstellung der Übersetzung nicht mehr benötigt werden."
@@ -77,6 +84,7 @@
 
 - english_name: "Arabic"
   code: "ar"
+  dir: "rtl"
   i_speak: "وأنا أتكلم العربية"
   agreement_title: "اتفاق"
   agreement_text: "يتم تمكين الترجمة بواسطة مترجم Microsoft (\"المترجم\"). قد يتم استخدام النص أو الخطاب المقدّم للترجمة لتحسين الخدمة ولكن ليس للتعرف على أفراد معينين أو للإعلان. وتقتصر بيانات تحسين الخدمة على عينة لا تزيد عن 10% من الجمل غير المتتالية التي يتم اختيارها عشوائيًا من النص أو الصوت الذي تقدمه، ونخفي أو نحذف السلاسل الرقمية من الأحرف وعناوين البريد الإلكتروني التي قد تكون موجودة في عينات النص. يتم حذف أجزاء النص التي لا نستخدمها لتحسين المترجم خلال 48 ساعة بعد أن تصبح غير مطلوبة لتوفير الترجمة الخاصة بك. "
@@ -88,6 +96,7 @@
 
 - english_name: "Portuguese"
   code: "pt"
+  dir: "ltr"
   i_speak: "Eu falo Portugês"
   agreement_title: "Acordo"
   agreement_text: "A tradução é habilitada pelo Microsoft Translator (“Tradutor“). Textos ou discursos enviados para tradução podem ser utilizados para a melhoria do serviço, mas não serão usados para identificar indivíduos específicos ou para fins de publicidade. Dados de aprimoramento de serviço são limitados a uma amostra de não mais de 10% das frases  selecionadas de texto ou áudio não consecutivas e  aleatoriamente selecionadas, e mascaramos ou excluímos cadeias de caracteres numéricas ou endereços de email que possam estar presentes nas amostras de texto. As partes do texto que não usarmos para melhorar o Tradutor serão excluídas no prazo de 48 horas depois de deixarem de ser necessárias para fornecer a sua tradução."
