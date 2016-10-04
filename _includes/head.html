@@ -8,12 +8,16 @@
 
   <title>{{ site.title }}</title>
 
-  <link href="assets/css/fonts.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
-  <link href="vendor/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-  <link href="assets/css/checkmark.css" rel="stylesheet">
-  <link href="assets/css/styles.css" rel="stylesheet">
+
+  <style>
+    {% include vendor/css/ie10-viewport-bug-workaround.css %}
+    {% include assets/css/fonts.css %}
+    {% include assets/css/checkmark.css %}
+    {% include assets/css/styles.css %}
+  </style>
+
   <!--[if lt IE 9]>
     <script src="vendor/js/html5shiv.min.js"></script>
     <script src="vendor/js/respond.min.js"></script>
