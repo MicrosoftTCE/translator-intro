@@ -1,4 +1,6 @@
-$('.accept').click(function() {
+$('.accept').click(function(e) {
+  var lang = $(this).data('lang');
+
   // fade in
   window.scrollTo(0, 0);
   $('body').addClass('checkmark-visible');
@@ -11,6 +13,8 @@ $('.accept').click(function() {
 
   // redirect
   window.setTimeout(function() {
-    document.location = window.msft.translator.appUrl;
+    var url = window.msft.translator.appUrl;
+    url += '?lang=' + lang;
+    document.location = url;
   }, 1500);
 });
