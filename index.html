@@ -29,6 +29,10 @@ layout: default
   </div>
 </div>
 
+<div class="other">
+  <a href="{{ site.app_url }}" class="btn btn-link btn-lg">Other</a>
+</div>
+
 {% for language in site.data.languages %}
 {% include modal.html language=language %}
 {% endfor %}

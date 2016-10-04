@@ -9,14 +9,8 @@ $('.accept').click(function() {
     $('.checkmark').removeClass('hide');
   }, 250);
 
-  // fade out
+  // redirect
   window.setTimeout(function() {
-    $('body').removeClass('checkmark-visible');
-    $('.checkmark-background').addClass('transparent');
-
-    window.setTimeout(function() {
-      $('.checkmark-background').addClass('hide');
-      $('.checkmark').addClass('hide');
-    }, 1000);
-  }, 10000);
+    document.location = window.msft.translator.appUrl;
+  }, 1500);
 });

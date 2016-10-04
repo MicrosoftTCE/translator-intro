@@ -73,3 +73,7 @@ body.checkmark-visible {
   filter: alpha(opacity=0);
   opacity: 0;
 }
+
+.other {
+  text-align: center;
+}
