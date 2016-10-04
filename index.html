@@ -15,10 +15,11 @@ layout: default
   <div class="row">
     {% for language in site.data.languages %}
     <div class="col-sm-6 col-md-4">
-      <button type="button" class="btn btn-primary btn-lg"
+      <button type="button" class="btn btn-primary btn-lg language"
               data-toggle="modal"
               data-target="#language_modal_{{language.code}}"
-              data-lang="{{language.code}}">
+              data-lang="{{language.code}}"
+              data-lang-name="{{language.english_name}}">
         <span lang="{{ language.code }}" dir="{{ language.dir }}">
           {{ language.i_speak }}
         </span>
@@ -30,7 +31,7 @@ layout: default
 </div>
 
 <div class="other">
-  <a href="{{ site.app_url }}" class="btn btn-link btn-lg">Other</a>
+  <a href="{{ site.app_url }}" class="btn btn-link btn-lg other">Other</a>
 </div>
 
 {% for language in site.data.languages %}

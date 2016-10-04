@@ -1,4 +1,23 @@
+// add languages to future events when language is selected
+$('button.language').click(function(e) {
+  heap.addEventProperties({'Language': $(this).data('lang-name')});
+});
+
+// track when modal is closed without accepting
+$('.modal.language').on('hide.bs.modal', function (e) {
+  if (!window.msft.translator.agreementAccepted) {
+    heap.track('Not Accept');
+  }
+})
+
+// clear languages after modal is closed
+$('.modal.language').on('hidden.bs.modal', function (e) {
+  heap.removeEventProperty('Language');
+})
+
 $('.accept').click(function(e) {
+  window.msft.translator.agreementAccepted = true;
+
   var lang = $(this).data('lang');
 
   // fade in

@@ -1,6 +1,6 @@
 {% assign language = include.language %}
 
-<div class="modal fade" id="language_modal_{{ language.code }}"
+<div class="modal fade language" id="language_modal_{{ language.code }}"
      tabindex="-1" role="dialog" aria-labelledby="modalLabel"
      dir="{{ language.dir }}" lang="{{ language.code }}">
   <div class="modal-dialog" role="document">
@@ -17,7 +17,8 @@
           <div class="well">{{ language.agreement_text }}</div>
           <p>{{ language.privacy_instructions }}</p>
           <p>
-            <a href="{{ language.privacy_url }}" target="_blank">
+            <a href="{{ language.privacy_url }}" target="_blank"
+               class="privacy">
               {{ language.privacy_url }}
             </a>
           </p>
