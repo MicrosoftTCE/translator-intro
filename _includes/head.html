@@ -8,6 +8,12 @@
 
   <title>{{ site.title }}</title>
 
+  <script>
+    window.msft = window.msft || {};
+    window.msft.translator = window.msft.translator || {};
+    window.msft.translator.appUrl = '{{ site.app_url }}';
+  </script>
+
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
 
@@ -22,10 +28,4 @@
     <script src="vendor/js/html5shiv.min.js"></script>
     <script src="vendor/js/respond.min.js"></script>
   <![endif]-->
-
-  <script>
-    window.msft = window.msft || {};
-    window.msft.translator = window.msft.translator || {};
-    window.msft.translator.appUrl = '{{ site.app_url }}';
-  </script>
 </head>
