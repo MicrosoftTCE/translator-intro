@@ -9,7 +9,7 @@ body.checkmark-visible {
 .banner {
   background-color: #107c10;
   color: white;
-  margin-bottom: 2em;
+  margin-bottom: 4em;
   padding: 1em 0;
   vertical-align: middle;
 }
@@ -56,10 +56,10 @@ body.checkmark-visible {
   left: 0;
   width: 100%;
   height: 100%;
-  margin-top: 60px;
-  padding-bottom: 60px;
+  margin-top: 50px;
+  padding: 10px 0 60px;
   transition: opacity .4s;
-  z-index: 5000;
+  z-index: 500;
 }
 
 .checkmark-background > .container {
