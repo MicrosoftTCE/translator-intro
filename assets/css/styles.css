@@ -10,11 +10,32 @@ body.checkmark-visible {
   background-color: #107c10;
   color: white;
   margin-bottom: 2em;
+  padding: 1em 0;
+  vertical-align: middle;
+}
+
+.banner .img-wrapper {
+  background-color: white;
+  border-radius: 10rem;
+  box-sizing: content-box;
+  display: inline-block;
+  max-width: 7rem;
+  max-height: 7rem;
+  margin: 2rem 2rem 2rem 0;
+  padding: 1.5rem;
+  vertical-align: middle;
+}
+
+.banner img {
+  height: 100%;
+  width: 100%;
 }
 
 .banner h1 {
-  margin: 1em 0;
+  display: inline-block;
+  margin: 1rem 0;
   padding: 0;
+  vertical-align: middle;
 }
 
 .buttons.container .btn {
