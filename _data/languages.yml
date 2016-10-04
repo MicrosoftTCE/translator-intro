@@ -1,5 +1,5 @@
 - english_name: "English"
-  code: "en"
+  code: "en-US"
   dir: "ltr"
   i_speak: "I speak English"
   agreement_title: "Agreement"
@@ -11,19 +11,19 @@
   agreement_decline: "Cancel"
 
 - english_name: "Spanish"
-  code: "es"
+  code: "es-ES"
   dir: "ltr"
   i_speak: "Yo hablo español"
   agreement_title: "Acuerdo"
   agreement_text: "Microsoft Translator (“Translator”) habilita la traducción. El texto o discurso que se envía para traducir puede utilizarse para la mejora del servicio, pero no se utilizará para identificar a personas específicas o con fines publicitarios. Los datos para la mejora del servicio se limitan a una muestra no superior a un 10 % de oraciones seleccionadas al azar no consecutivas del texto o audio enviado, y enmascaramos o eliminamos cadenas numéricas de caracteres y direcciones de correo electrónico que pueden aparecer en las muestras de texto. Las porciones de texto que no utilizamos para mejorar Translator se eliminan en un plazo de 48 horas cuando ya no se requiere su traducción."
   privacy_instructions: "Si desea obtener más información sobre la declaración de privacidad de Microsoft Translator, haga clic en el vínculo que aparece a continuación:"
-  privacy_url: "https://privacy.microsoft.com/es-mx/privacystatement/"
+  privacy_url: "https://privacy.microsoft.com/es-es/privacystatement/"
   agreement_instructions: "Si desea continuar con su sesión usando Translator, haga clic <strong>Aceptar</strong>."
   agreement_accept: "Aceptar"
   agreement_decline: "Cancelar"
 
 - english_name: "Chinese Simplified"
-  code: "zh-Hans"
+  code: "zh-CN"
   dir: "ltr"
   i_speak: "我说中文"
   agreement_title: "协议"
@@ -35,7 +35,7 @@
   agreement_decline: "取消"
 
 - english_name: "Chinese Traditional"
-  code: "zh-Hant"
+  code: "zh-TW"
   dir: "ltr"
   i_speak: "我說中文"
   agreement_title: "協定"
@@ -47,7 +47,7 @@
   agreement_decline: "取消"
 
 - english_name: "Italian"
-  code: "it"
+  code: "it-IT"
   dir: "ltr"
   i_speak: "Io parlo italiano"
   agreement_title: "Accordo"
@@ -59,7 +59,7 @@
   agreement_decline: "Cancellare"
 
 - english_name: "French"
-  code: "fr"
+  code: "fr-FR"
   dir: "ltr"
   i_speak: "Je parle français"
   agreement_title: "Accord"
@@ -71,7 +71,7 @@
   agreement_decline: "Annuler"
 
 - english_name: "German"
-  code: "de"
+  code: "de-DE"
   dir: "ltr"
   i_speak: "Ich spreche Deutsch."
   agreement_title: "Vereinbarung"
@@ -83,7 +83,7 @@
   agreement_decline: "Abbrechen"
 
 - english_name: "Arabic"
-  code: "ar"
+  code: "ar-EG"
   dir: "rtl"
   i_speak: "وأنا أتكلم العربية"
   agreement_title: "اتفاق"
@@ -95,7 +95,7 @@
   agreement_decline: "إلغاء الأمر"
 
 - english_name: "Portuguese"
-  code: "pt"
+  code: "pt-BR"
   dir: "ltr"
   i_speak: "Eu falo Portugês"
   agreement_title: "Acordo"
