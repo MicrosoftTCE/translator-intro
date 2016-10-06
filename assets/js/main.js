@@ -34,6 +34,7 @@ $('.accept').click(function(e) {
   window.setTimeout(function() {
     var url = window.msft.translator.appUrl;
     url += '?language=' + lang;
+    url += '&returnTo=' + encodeURIComponent(document.location);
     document.location = url;
   }, 1500);
 });
