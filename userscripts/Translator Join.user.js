@@ -11,10 +11,10 @@
 
 (function() {
   'use strict';
-  
+
   // can we dry this up by accessing the params above somehow?
   console.debug('[IDNYC Translator Join] loaded version 0.1');
-  
+
   function getUrlParameterByName(name, url) {
     if (!url) url = window.location.href;
     name = name.replace(/[\[\]]/g, "\\$&");
@@ -24,35 +24,32 @@
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, " "));
   }
-  
+
   function setScopeParam(scope, paramName, value) {
     console.debug('[IDNYC Translator Join] old', paramName, scope[paramName]);
     console.debug('[IDNYC Translator Join] new', paramName, value);
-    
+
     scope[paramName] = value;
+    scope.$apply();
   }
-  
+
   function setLanguageCode(scope) {
     var newLanguageCode = getUrlParameterByName('lang');
-    
+
     if (!newLanguageCode) {
       console.warn('[IDNYC Translator Join] new languageCode in falsy; aborting');
       return;
     }
-    
+
     setScopeParam(scope, 'languageCode', newLanguageCode);
   }
-  
+
   function setApplicantName(scope) {
-    var date = new Date();
-    var hour = (date.getHours() - (date.getHours() >= 12 ? 12 : 0)) || 12;
-    var period = date.getHours() >= 12 ? 'PM' : 'AM';
-    var time = hour + ':' + date.getMinutes() + ' ' + period;
-    var name = 'Applicant (' + time + ')';
-    
+    var name = 'Applicant ' + Math.round(Math.random() * 1000);
+
     setScopeParam(scope, 'nickname', name);
   }
-  
+
   function getScope(callback) {
     var scope = angular.element('#languageCode').scope();
     console.debug('[IDNYC Translator Join] scope:', scope ? scope : 'falsy');
@@ -70,10 +67,10 @@
     getScope(function(scope) {
       setLanguageCode(scope);
       setApplicantName(scope);
-      
-      scope.$apply();
+
+      $('#roomId').on('focus', function() { $(this).val(null); });
     });
   }
-  
+
   init();
 })();

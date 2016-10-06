@@ -11,21 +11,14 @@
   <script>
     (function() {
       var roomId = ' ';
-      function applicantName() {
-        var date = new Date();
-        var hour = (date.getHours() - (date.getHours() >= 12 ? 12 : 0)) || 12;
-        var period = date.getHours() >= 12 ? 'PM' : 'AM';
-        var time = hour + ':' + date.getMinutes() + ' ' + period;
-
-        return 'Applicant (' + time + ')';
-      }
+      var applicantName = 'Applicant ' + Math.round(Math.random() * 1000);
 
       window.msft = window.msft || {};
       window.msft.translator = window.msft.translator || {};
       window.msft.translator.appUrl =
         '{{ site.app_base_url }}' +
         escape(roomId) + '/' +
-        escape(applicantName());
+        escape(applicantName);
     })();
   </script>
 
