@@ -8,7 +8,7 @@
 # Site settings
 title: Microsoft Translator
 url: "https://microsofttce.github.io/translator-intro/"
-app_url: "https://msrmtc01.azurewebsites.net/join/%20/Applicant/"
+app_base_url: "https://msrmtc01.azurewebsites.net/join/"
 
 # Build settings
 markdown: kramdown
