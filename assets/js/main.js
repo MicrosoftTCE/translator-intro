@@ -33,7 +33,7 @@ $('.accept').click(function(e) {
   // redirect
   window.setTimeout(function() {
     var url = window.msft.translator.appUrl;
-    url += '?lang=' + lang;
+    url += '?language=' + lang;
     document.location = url;
   }, 1500);
 });
