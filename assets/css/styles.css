@@ -39,15 +39,21 @@ body.checkmark-visible {
 }
 
 .buttons.container .btn {
-  background-color: #1d71a4;
-  background-image: none;
-  border: 0;
   margin-bottom: 1em;
   padding: 2em 0;
   width: 100%;
 }
 
-.buttons.container .btn:hover {
+.btn {
+  background-image: none;
+}
+
+.btn-primary {
+  background-color: #1d71a4;
+  border: 0;
+}
+
+.btn-primary:hover {
   background-color: #002050;
 }
 
