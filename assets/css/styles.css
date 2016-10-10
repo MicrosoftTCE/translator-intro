@@ -19,8 +19,8 @@ body.checkmark-visible {
   border-radius: 10rem;
   box-sizing: content-box;
   display: inline-block;
-  max-width: 7rem;
-  max-height: 7rem;
+  max-width: 6rem;
+  max-height: 6rem;
   margin: 2rem 2rem 2rem 0;
   padding: 1.5rem;
   vertical-align: middle;
@@ -39,9 +39,16 @@ body.checkmark-visible {
 }
 
 .buttons.container .btn {
+  background-color: #1d71a4;
+  background-image: none;
+  border: 0;
   margin-bottom: 1em;
   padding: 2em 0;
   width: 100%;
+}
+
+.buttons.container .btn:hover {
+  background-color: #002050;
 }
 
 .navbar-brand img {

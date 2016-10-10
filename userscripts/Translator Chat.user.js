@@ -43,7 +43,6 @@
     console.debug('[IDNYC Translator Chat] new', paramName, value);
 
     scope[paramName] = value;
-    scope.$apply();
   }
 
   function redirect() {
@@ -64,13 +63,21 @@
       console.debug('[IDNYC Translator Chat] isShowExitDialog changed', newValue, oldValue);
 
       if (newValue) {
+        setScopeParam(scope, 'isBrowserExitDialogRequired', false);
         redirect();
       }
     });
   }
 
-  function disableExitAlert(scope) {
-    setScopeParam(scope, 'isBrowserExitDialogRequired', false);
+  function redirectOnForcedExit(scope) {
+    scope.$watch('isForcedExit', function(newValue, oldValue) {
+      console.debug('[IDNYC Translator Chat] isForcedExit changed', newValue, oldValue);
+
+      if (newValue) {
+        setScopeParam(scope, 'isBrowserExitDialogRequired', false);
+        redirect();
+      }
+    });
   }
 
   function init() {
@@ -79,7 +86,7 @@
         // NOOP
       } else {
         redirectOnExitDialog(scope);
-        disableExitAlert(scope);
+        redirectOnForcedExit(scope);
       }
     });
   }
