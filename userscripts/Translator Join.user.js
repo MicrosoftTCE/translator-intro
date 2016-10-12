@@ -49,7 +49,7 @@
     } else {
       window.setTimeout(function() {
         setLanguageCode(scope);
-      }, 10); // takes about 40ms in practice
+      }, 10); // happens almost instatntly; might just need any timeout
     }
   }
 
