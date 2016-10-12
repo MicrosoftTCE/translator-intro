@@ -13,7 +13,7 @@
   'use strict';
 
   // can we dry this up by accessing the params above somehow?
-  console.debug('[IDNYC Translator Join] loaded version 0.1');
+  console.debug('[IDNYC Translator Join] loaded version 0.2');
 
   function getUrlParameterByName(name, url) {
     if (!url) url = window.location.href;
