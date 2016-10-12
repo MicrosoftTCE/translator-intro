@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Translator Join
 // @namespace    http://microsoftnewyork.com
-// @version      0.1
+// @version      0.2
 // @description  Augment functionality of Translator's "join" interface.
 // @author       Ross Dakin
 // @match        https://msrmtc01.azurewebsites.net/join*
@@ -34,14 +34,23 @@
   }
 
   function setLanguageCode(scope) {
-    var newLanguageCode = getUrlParameterByName('lang');
+    var newLanguageCode = getUrlParameterByName('language');
+
+    console.debug('[IDNYC Translator Join] setLanguageCode:', scope.speechLanguages);
 
     if (!newLanguageCode) {
-      console.warn('[IDNYC Translator Join] new languageCode in falsy; aborting');
+      console.warn('[IDNYC Translator Join] new languageCode is falsy; aborting');
       return;
     }
 
-    setScopeParam(scope, 'languageCode', newLanguageCode);
+    if (scope.speechLanguages &&
+        scope.speechLanguages.length) {
+      setScopeParam(scope, 'languageCode', newLanguageCode);
+    } else {
+      window.setTimeout(function() {
+        setLanguageCode(scope);
+      }, 10); // takes about 40ms in practice
+    }
   }
 
   function setApplicantName(scope) {
