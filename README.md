@@ -3,6 +3,8 @@ This repository contains two components:
 - a website serving as an introductory page to Translator
 - userscripts that modify the behavior of Translator
 
+The intended scenario is for users to begin at this website, make a language selection, be redirected to Translator, then be redirected back to this website when the Translator session ends.
+
 # Website
 
 ## Setup
