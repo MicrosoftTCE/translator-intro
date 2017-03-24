@@ -12,3 +12,9 @@ app_base_url: "https://msrmtc01.azurewebsites.net/join/"
 
 # Build settings
 markdown: kramdown
+
+exclude:
+  - 'Gemfile'
+  - 'Gemfile.lock'
+  - 'LICENSE'
+  - 'README.md'
